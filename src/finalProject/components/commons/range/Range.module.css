@@ -1,0 +1,10 @@
+.superRange {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 310px;
+}
+
+.range {
+    width: 300px;
+}
