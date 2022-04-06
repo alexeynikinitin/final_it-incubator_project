@@ -1,7 +1,7 @@
 import React from 'react';
 import {Dispatch} from "redux";
 import {registrationAPI} from "../../m3-dal/registration-api";
-import {setAppStatusAC, SetAppStatusActionType} from "./app-reducer";
+import {setAppStatusAC, SetAppStatusActionType} from "finalProject/store/app/app-reducer";
 import {setAppErrorAC, setAppSuccessAC} from "./error-reducer";
 
 

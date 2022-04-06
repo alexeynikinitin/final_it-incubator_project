@@ -2,7 +2,7 @@ import React from 'react';
 import {Dispatch} from "redux";
 import {authAPI} from "../../m3-dal/recovery-api";
 import {setAppErrorAC, SetAppErrorType, setAppSuccessAC, SetAppSuccessType} from "./error-reducer";
-import {setAppStatusAC, SetAppStatusActionType} from "./app-reducer";
+import {setAppStatusAC, SetAppStatusActionType} from "finalProject/store/app/app-reducer";
 
 const initialPasswordRecoveryState: PasswordRecoveryStateType = {
   isEmailSend: false,

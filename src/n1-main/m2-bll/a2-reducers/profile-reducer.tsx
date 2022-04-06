@@ -1,6 +1,6 @@
 import {profileAPI, UpdateUserResponseType} from '../../m3-dal/profile-api';
 import {Dispatch} from "redux";
-import {setAppStatusAC, SetAppStatusActionType} from "./app-reducer";
+import {setAppStatusAC, SetAppStatusActionType} from "finalProject/store/app/app-reducer";
 import {setAppErrorAC, SetAppErrorType, SetAppSuccessType} from "./error-reducer";
 
 const initialState: TNullable<UserProfileStateType> = null

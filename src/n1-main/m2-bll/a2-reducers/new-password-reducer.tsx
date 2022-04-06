@@ -2,7 +2,7 @@ import React from 'react';
 import {Dispatch} from "redux";
 import {authAPI} from "../../m3-dal/setNewPassword-api";
 import {setIsLoadingAC} from "./password-recovery-reducer";
-import {setAppStatusAC, SetAppStatusActionType} from "./app-reducer";
+import {setAppStatusAC, SetAppStatusActionType} from "finalProject/store/app/app-reducer";
 import {setAppErrorAC, SetAppErrorType, setAppSuccessAC, SetAppSuccessType} from "./error-reducer";
 
 const initialNewPasswordState: NewPasswordStateType = {

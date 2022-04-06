@@ -4,7 +4,7 @@ import { cards } from 'finalProject/services/api/cards';
 import { UpdateCardDataType } from 'finalProject/services/api/types';
 import { fetchingCardsData } from 'finalProject/store/cards/thunks/fetchingCardsData';
 import { CardsReducerActionsType } from 'finalProject/store/cards/types';
-import { setAppStatusAC } from 'n1-main/m2-bll/a2-reducers/app-reducer';
+import { setAppStatusAC } from 'finalProject/store/app/app-reducer';
 
 export const updateCard =
   (packId: string, cardId: string, question: string, answer: string) =>

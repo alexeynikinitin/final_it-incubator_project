@@ -1,6 +1,6 @@
 import {questionApi} from "../../m3-dal/question-api";
 import {Dispatch} from "redux";
-import {setAppStatusAC, setIsInitializedAC} from "./app-reducer";
+import {setAppStatusAC, setIsInitializedAC} from "finalProject/store/app/app-reducer";
 
 type InitislStateType = {
   cards: Array<CardType>

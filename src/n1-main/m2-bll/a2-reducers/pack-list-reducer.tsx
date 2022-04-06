@@ -1,6 +1,6 @@
 import {AddPackListRequestType, packListAPI, packListRequestType} from "../../m3-dal/packList-api";
 import {Dispatch} from "redux";
-import {setAppStatusAC, SetAppStatusActionType} from "./app-reducer";
+import {setAppStatusAC, SetAppStatusActionType} from "finalProject/store/app/app-reducer";
 import {setAppErrorAC, SetAppErrorType, SetAppSuccessType} from "./error-reducer";
 import {AppRootStateType, AppThunk} from "../a1-redux-store/store";
 import {TNullable} from "./profile-reducer";
