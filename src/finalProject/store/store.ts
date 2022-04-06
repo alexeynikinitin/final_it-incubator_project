@@ -1,19 +1,61 @@
-import {ProfileActionsType, profileReducer} from "./profile/profile-reducer";
-import thunk, {ThunkAction, ThunkDispatch} from "redux-thunk";
-import { combineReducers,  createStore, applyMiddleware } from 'redux';
-const reducers = combineReducers({
-   profile: profileReducer
-})
+import { applyMiddleware, combineReducers, createStore } from 'redux';
+import thunkMiddleware, { ThunkAction } from 'redux-thunk';
 
-export const store = createStore(
-   reducers,
-   applyMiddleware(thunk),
-)
+import { AppActionType, appReducer } from '../a2-reducers/app-reducer';
+import errorReducer, { ErrorActionType } from '../a2-reducers/error-reducer';
+import loginReducer, { LoginActionsType } from '../a2-reducers/login-reducer';
+import {
+  NewPasswordActionType,
+  newPasswordReducer,
+} from '../a2-reducers/new-password-reducer';
+import { PackListActionsType, packListReducer } from '../a2-reducers/pack-list-reducer';
+import {
+  PasswordRecoveryActionType,
+  passwordRecoveryReducer,
+} from '../a2-reducers/password-recovery-reducer';
+import profileReducer, {
+  ProfileReducerActionsType,
+} from '../a2-reducers/profile-reducer';
+import { questionReducer } from '../a2-reducers/question-reduser';
+import registrationReducer, {
+  RegistrationActionType,
+} from '../a2-reducers/registration-reducer';
+import { cardsReducer } from 'finalProject/store/cards/cards-reducer';
+import { CardsReducerActionsType } from 'finalProject/store/cards/types';
 
-export type AppStoreType = ReturnType<typeof reducers>
-export type AppActionCreatorsType = ProfileActionsType
-export type ThunkType = ThunkAction<Promise<void>, AppStoreType, unknown, AppActionCreatorsType>
-export type ThunkDispatchType = ThunkDispatch<AppStoreType, unknown, AppActionCreatorsType>;
+const rootReducer = combineReducers({
+  login: loginReducer,
+  registration: registrationReducer,
+  profile: profileReducer,
+  cards: cardsReducer,
+  error: errorReducer,
+  app: appReducer,
+  passwordRecovery: passwordRecoveryReducer,
+  newPassword: newPasswordReducer,
+  packList: packListReducer,
+  questionReducer,
+});
 
-// @ts-ignore
-window.store = store
+export const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
+
+export type AppRootStateType = ReturnType<typeof rootReducer>;
+
+// AppActionsType
+export type AppRootActionsType =
+  | AppActionType
+  | CardsReducerActionsType
+  | ErrorActionType
+  | LoginActionsType
+  | NewPasswordActionType
+  | PackListActionsType
+  | PasswordRecoveryActionType
+  | ProfileReducerActionsType
+  | RegistrationActionType;
+
+// thunk type
+export type AppThunk<ReturnType = void> = ThunkAction<
+  ReturnType,
+  AppRootStateType,
+  unknown,
+  AppRootActionsType
+>;
