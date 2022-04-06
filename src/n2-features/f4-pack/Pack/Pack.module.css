@@ -1,0 +1,11 @@
+.pack {
+    width: 1008px;
+    padding: 20px 25px;
+    border-radius: 8px;
+    background-color: #fff;
+    position: relative;
+}
+
+.searchInput {
+    margin-top: 20px;
+}

@@ -1,0 +1,73 @@
+.cardItem {
+    min-height: 48px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 24px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    position: relative;
+}
+
+.cardItem:hover .edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question {
+    width: 35%;
+}
+
+.answer {
+    width: 35%;
+    margin-right: 10px;
+}
+
+.lastUpdated {
+    width: 17%;
+}
+
+.grade {
+    width: 10%;
+}
+
+.actions {
+    width: 18%;
+}
+
+.editCardButton {
+    background-color: #D7D8EF;
+    padding: 5px;
+    outline: none;
+    border: none;
+    margin-right: 6px;
+    border-radius: 3px;
+    color: mediumblue;
+    cursor: pointer;
+}
+
+.deleteCardButton {
+    padding: 5px;
+    outline: none;
+    border: none;
+    margin-right: 6px;
+    border-radius: 3px;
+    background-color: #F1453D;
+    color: white;
+    cursor: pointer;
+}
+
+.learnCardButton {
+    background-color: #D7D8EF;
+    padding: 5px;
+    outline: none;
+    border: none;
+    margin-right: 6px;
+    border-radius: 3px;
+    color: mediumblue;
+    cursor: pointer;
+}

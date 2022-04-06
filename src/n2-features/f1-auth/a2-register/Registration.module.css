@@ -1,0 +1,137 @@
+.containerForm {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.headerForm {
+    text-align: center;
+    height: 130px;
+
+
+}
+
+.headerForm h2 {
+    margin-top: 0px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.headerForm h3 {
+    margin-top: 31px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.inputForm {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inputForm input {
+    padding-left: 10px;
+    height: 40px;
+    margin-top: 10px;
+    outline: none;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+}
+
+.buttonForm {
+
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.buttonForm button {
+
+    height: 36px;
+    border: none;
+    background: mediumblue;
+    box-shadow: 3px 3px 10px gray;
+    color: #ECECF9;
+    padding: 8px 48px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.buttonForm button:first-child {
+    background: #D7D8EF;
+    color: mediumblue;
+
+}
+
+.buttonForm button:disabled {
+    background: lightgrey;
+    box-shadow: 1px 1px 5px gray;
+}
+
+
+.errorForm {
+    margin: 10px;
+    padding: 5px;
+    color: red;
+    border: solid 1px red;
+    width: auto;
+    hight: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.successForm {
+    margin: 10px;
+    padding: 5px;
+    color: green;
+    border: solid 1px green;
+    width: auto;
+    hight: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.inputFormError {
+    color: red;
+    height: 20px;
+    font-size: 14px;
+}
+
+.titleText {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.secondTitleText {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.eyeOne {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 334px;
+    top: 242px;
+    cursor: pointer;
+}
+
+.eyeTwo {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 334px;
+    top: 313px;
+    cursor: pointer;
+}
