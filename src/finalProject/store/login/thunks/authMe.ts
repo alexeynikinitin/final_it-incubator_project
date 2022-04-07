@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux';
 
-import { auth } from 'finalProject/services/api/login';
+import { auth } from 'finalProject/services/api/auth';
 import {
   setAppStatus,
   setAppSuccess,

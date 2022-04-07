@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux';
 
-import { auth } from 'finalProject/services/api/login';
+import { auth } from 'finalProject/services/api/auth';
 import { LoginParamsType } from 'finalProject/services/api/types';
 import {
   setAppError,
