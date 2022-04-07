@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useNavigate} from "react-router-dom";
 import {path} from "../../../n1-main/m1-ui/routes/Routes";
 import {useDispatch, useSelector} from "react-redux";
-import {addUserTC,} from "../../../n1-main/m2-bll/a2-reducers/registration-reducer";
+import {addUserTC,} from "finalProject/store/registration/registration-reducer";
 import {AppRootStateType} from "../../../n1-main/m2-bll/a1-redux-store/store";
 import {SubmitHandler, useForm} from "react-hook-form";
 import * as yup from "yup";

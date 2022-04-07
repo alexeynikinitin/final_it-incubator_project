@@ -11,9 +11,7 @@ import profileReducer, {
   ProfileReducerActionsType,
 } from '../a2-reducers/profile-reducer';
 import { questionReducer } from '../a2-reducers/question-reduser';
-import registrationReducer, {
-  RegistrationActionType,
-} from '../a2-reducers/registration-reducer';
+
 
 import { appReducer } from 'finalProject/store/app/app-reducer';
 import { AppActionType } from 'finalProject/store/app/types';
@@ -23,13 +21,14 @@ import { loginReducer } from 'finalProject/store/login/login-reducer';
 import { LoginActionsType } from 'finalProject/store/login/types';
 import { newPasswordReducer } from 'finalProject/store/newPassword/newPassword-reducer';
 import { NewPasswordActionType } from 'finalProject/store/newPassword/Types';
+import { registrationReducer } from 'finalProject/store/registration/registration-reducer';
+import { RegistrationActionType } from 'finalProject/store/registration/Types';
 
 const rootReducer = combineReducers({
   app: appReducer,
   cards: cardsReducer,
   login: loginReducer,
   newPassword: newPasswordReducer,
-
   registration: registrationReducer,
   profile: profileReducer,
   error: errorReducer,
