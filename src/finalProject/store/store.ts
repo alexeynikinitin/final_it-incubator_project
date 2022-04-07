@@ -3,15 +3,10 @@ import thunkMiddleware, { ThunkAction } from 'redux-thunk';
 
 import errorReducer, { ErrorActionType } from '../a2-reducers/error-reducer';
 import { PackListActionsType, packListReducer } from '../a2-reducers/pack-list-reducer';
-import {
-  PasswordRecoveryActionType,
-  passwordRecoveryReducer,
-} from '../a2-reducers/password-recovery-reducer';
 import profileReducer, {
   ProfileReducerActionsType,
 } from '../a2-reducers/profile-reducer';
 import { questionReducer } from '../a2-reducers/question-reduser';
-
 
 import { appReducer } from 'finalProject/store/app/app-reducer';
 import { AppActionType } from 'finalProject/store/app/types';
@@ -21,6 +16,8 @@ import { loginReducer } from 'finalProject/store/login/login-reducer';
 import { LoginActionsType } from 'finalProject/store/login/types';
 import { newPasswordReducer } from 'finalProject/store/newPassword/newPassword-reducer';
 import { NewPasswordActionType } from 'finalProject/store/newPassword/Types';
+import { passwordRecoveryReducer } from 'finalProject/store/passwordRecovery/passwordRecovery-reducer';
+import { PasswordRecoveryActionType } from 'finalProject/store/passwordRecovery/Types';
 import { registrationReducer } from 'finalProject/store/registration/registration-reducer';
 import { RegistrationActionType } from 'finalProject/store/registration/Types';
 
@@ -30,9 +27,9 @@ const rootReducer = combineReducers({
   login: loginReducer,
   newPassword: newPasswordReducer,
   registration: registrationReducer,
+  passwordRecovery: passwordRecoveryReducer,
   profile: profileReducer,
   error: errorReducer,
-  passwordRecovery: passwordRecoveryReducer,
   packList: packListReducer,
   questionReducer,
 });
