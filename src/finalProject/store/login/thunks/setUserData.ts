@@ -2,10 +2,14 @@ import { Dispatch } from 'redux';
 
 import { auth } from 'finalProject/services/api/login';
 import { LoginParamsType } from 'finalProject/services/api/types';
-import { setAppStatus, setIsInitialized } from 'finalProject/store/app/actions';
+import {
+  setAppError,
+  setAppStatus,
+  setAppSuccess,
+  setIsInitialized,
+} from 'finalProject/store/app/actions';
 import { setIsLoggedIn } from 'finalProject/store/login/actions';
 import { LoginActionsType } from 'finalProject/store/login/types';
-import { setAppErrorAC } from 'n1-main/m2-bll/a2-reducers/error-reducer';
 import { setUserProfileData } from 'n1-main/m2-bll/a2-reducers/profile-reducer';
 
 export const setUserData =
@@ -17,7 +21,7 @@ export const setUserData =
         dispatch(setIsLoggedIn(true));
         dispatch(setUserProfileData(res.data));
         dispatch(setAppSuccess(res.statusText));
-        dispatch(setAppErrorAC(null));
+        dispatch(setAppError(null));
         dispatch(setAppStatus('succeeded'));
       })
       .catch(err => {

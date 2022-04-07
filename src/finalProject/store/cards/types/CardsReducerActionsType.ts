@@ -1,10 +1,15 @@
 import {
+  SetAppErrorType,
+  SetAppStatusActionType,
+  SetAppSuccessType,
+} from 'finalProject/store/app/types';
+import {
   setCardsData,
   setCountItemsOnPage,
   setCurrentPage,
   setSearchCardQuestion,
   setSortCardColumn,
-} from 'finalProject/store/cards/cards-actions';
+} from 'finalProject/store/cards/actions';
 
 export type CardsReducerActionsType =
   | ReturnType<typeof setCardsData>

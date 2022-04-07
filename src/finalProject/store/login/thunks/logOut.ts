@@ -1,7 +1,7 @@
 import { Dispatch } from 'redux';
 
 import { auth } from 'finalProject/services/api/login';
-import { setAppStatus } from 'finalProject/store/app/actions';
+import { setAppError, setAppStatus, setAppSuccess } from 'finalProject/store/app/actions';
 import { setIsLoggedIn } from 'finalProject/store/login/actions';
 import { LoginActionsType } from 'finalProject/store/login/types';
 

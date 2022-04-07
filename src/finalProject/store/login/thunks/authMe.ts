@@ -1,7 +1,11 @@
 import { Dispatch } from 'redux';
 
 import { auth } from 'finalProject/services/api/login';
-import { setAppStatus, setIsInitialized } from 'finalProject/store/app/actions';
+import {
+  setAppStatus,
+  setAppSuccess,
+  setIsInitialized,
+} from 'finalProject/store/app/actions';
 import { setIsLoggedIn } from 'finalProject/store/login/actions';
 import { LoginActionsType } from 'finalProject/store/login/types';
 import { setUserProfileData } from 'n1-main/m2-bll/a2-reducers/profile-reducer';

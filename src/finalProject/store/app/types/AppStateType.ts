@@ -3,4 +3,6 @@ import { RequestStatusType } from 'finalProject/store/app/types/RequestStatusTyp
 export type AppStateType = {
   status: RequestStatusType;
   isInitialized: boolean;
+  error: string | null;
+  success: string | null;
 };
